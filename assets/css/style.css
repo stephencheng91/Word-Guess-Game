@@ -1,0 +1,28 @@
+
+header{
+    text-align: center;
+    font-size: 100px;
+}
+
+body{
+    background-image: url("../images/Background.jpg");
+}
+
+p{
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+.row{
+    height: 100px;
+    padding: 15px;
+    
+}
+
+#interface{
+    height: 200px;
+    background-color: lightskyblue;
+}

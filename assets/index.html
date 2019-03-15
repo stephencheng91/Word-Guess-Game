@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Word Guess Game</title>
+        <meta charset="UTF-8">
+        <!-- Importing bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Customize css file -->
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+       
+        
+        
+    </head>
+    <body>
+        <header>Word Guess!</header>
+        
+        <div class="container">
+            <div class="row" >
+                <div class="col-xl-4"></div>
+                <div class="col-xl-4" >
+                    <div class="card centered" id="title">
+                        Press any key to start the game!
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="card" id="interface">
+                        <p>Number of Guess left: <span id="guessCount"></span></p>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="card" id="interface">
+                        <!-- Creating id for use in JS -->
+                        <P>Guess below WORD: </P>
+                        <p><span id="word"></span></p>
+                        <p>Character Guessed: </p>
+                        <p><span id="userGuessed">You have not yet started!</span></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+         <!-- Import Javascript -->
+        <script type="text/javascript" src="javascript/game.js"></script>
+        
+    </body>
+</html>
