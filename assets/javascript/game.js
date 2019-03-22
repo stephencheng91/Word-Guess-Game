@@ -7,7 +7,8 @@ var mem = ["_ ","_ ","_ ","_ ","_ ","_ ","_ "];
 var word = document.getElementById("word");
 var guessed = document.getElementById("userGuessed");
 var guessCount = document.getElementById("guessCount");
-
+//Setting initial value
+var numGuess = 10;
  
 
 document.onkeyup = function (event){
@@ -15,9 +16,6 @@ document.onkeyup = function (event){
     guessed.textContent=event.key;
     var output ="";
 
-    //Setting initial value
-    var numGuess = 10;
-    
 
     for(var i = 0; i < answer.length; i++){
         
@@ -26,7 +24,7 @@ document.onkeyup = function (event){
 
 
         }else if(event.key !== answer[i] && numGuess > 0){
-            numGuess = numGuess-1; 
+           numGuess-1; 
         }
 
         document.getElementById("guessCount").innerHTML = numGuess;
